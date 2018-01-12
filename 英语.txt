@@ -1,0 +1,17 @@
+comfirm 确认
+dump 倾倒
+expire 到期
+token 象征
+invalid 无效的
+generation 产生
+assignment 任务
+variable 变量
+referenced 引用
+instruction 指令
+toggle 开关
+caret 插入符号
+moderate 温和的，节制
+decorator 装饰者
+wraps 外衣，覆盖
+argument 参数
+abort 终止
