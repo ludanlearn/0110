@@ -1,11 +1,13 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField, BooleanField, SelectField
-from wtforms.validators import Required, Length, Email
+from wtforms.validators import Required, Length, Email, Regexp
+from wtforms import ValidationError
+from ..models import Role, User
 
 
 class EditProfileForm(FlaskForm):
-    name - StringField('Reale name', validators=[length(0,64)])
-    location = StringField('location', validators=[length(0,64)])
+    name = StringField('Real name', validators=[Length(0,64)])
+    location = StringField('Location', validators=[Length(0,64)])
     about_me = TextAreaField('About me')
     submit = SubmitField('Submit')
 
@@ -15,8 +17,8 @@ class EditProfileAdminForm(FlaskForm):
     confirmed = BooleanField('Confirmed')
     role = SelectField('Role', coerce=int)
     name = StringField('Real name', validators=[Length(0,64)])
-    location = StringField('location', validators=[length(0,64)])
-    about_me = StringField('About me')
+    location = StringField('Location', validators=[Length(0,64)])
+    about_me = TextAreaField('About me')
     submit = SubmitField('Submit')
 
     def __init__(self, user, *args, **kwargs):
