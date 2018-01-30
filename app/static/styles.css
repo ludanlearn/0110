@@ -1,7 +1,8 @@
-.profile-tumbnail{
-    position:absolute;
+.profile-thumbnail {
+    position: absolute;
 }
-.profile-header{
+.profile-header {
     min-height: 260px;
     margin-left: 280px;
 }
+

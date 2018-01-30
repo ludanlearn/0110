@@ -13,7 +13,7 @@ class Config:
     MAIL_PASSWORD = 'xiedan123'
     FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
     FLASKY_MAIL_SENDER = 'xiexiedandan1@163.com'
-    FLASKY_ADMIN = os.environ.get('xiexiedandan1@163.com')
+    FLASKY_ADMIN = 'xiexiedandan1@163.com'
 
     @staticmethod
     def init_app(app):
