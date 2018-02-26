@@ -21,6 +21,7 @@ def index():
 @main.route('/user/<username>')
 def user(username):
     user = User.query.filter_by(username=username).first_or_404()
+    posts = user.query.order_by(user.posts.timestamps.desc())
     return render_template('user.html', user=user)
 
 
